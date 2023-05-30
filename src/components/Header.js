@@ -8,7 +8,7 @@ import {
     NavItem 
 } from "reactstrap";
 import { NavLink } from 'react-router-dom';
-import NucampLogo from '../app/assets/img/logo.png'
+import ProfilePic from '../app/assets/img/ProfilePic.png'
 import UserLoginForm from "../features/user/UserLoginForm";
 
 const Header = () => {
@@ -16,9 +16,9 @@ const Header = () => {
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
-            <NavbarBrand className='ms-5' href='/'>
-                <img src={NucampLogo} alt='nucamp logo' className='float-start'/>
-                <h1 className='mt-1'>Jarrett Roster: Portfolio</h1>
+            <NavbarBrand className='ms-2' href='/'>
+                <img src={ProfilePic} alt='profile pic' className='float-start'/>
+                <h1 className='mt-1'>Jarrett Roster</h1>
             </NavbarBrand>
 
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
