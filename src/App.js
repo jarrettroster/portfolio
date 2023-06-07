@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import Header from './components/Header';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
@@ -27,6 +27,10 @@ function App() {
     return (
         <div className="App">
             <Header />
+            <div style={{ 
+                backgroundImage: `url("https://via.placeholder.com/500")` 
+                }}>
+            </div>
             <Routes>
                 <Route path='/' element={<HomePage />} /> 
                 <Route path='contact' element={<ContactPage />} />
@@ -37,7 +41,6 @@ function App() {
                 />
                 <Route path='about' element={<AboutPage />} />
             </Routes>
-            <Footer />
         </div>
     );
 }
