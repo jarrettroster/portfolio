@@ -2,18 +2,16 @@ import { Container, Row, Col } from "reactstrap";
 import ProfilePic from '../app/assets/img/ProfilePic.png'
 
 
-
 const HomePage = () => {
     return (
         <Container>
-            <Row className="row-content">
+            <Row className="row-content, text-white">
                 <Col sm='7'>
-                    <h3>About Me</h3>
+                    <h3 style={{ paddingTop: 50, paddingBottom: 50 }}>
+                        I'm a Junior Software Developer out of Denver, CO.
+                    </h3>
                     <p>
-                        I'm a Junior Software Developer based out of Denver, CO. 
-                    </p>
-                    <p>
-                        Test
+                        Recently graduated from Nucamp Coding Bootcamp's Full Stack Development program.
                     </p>
                 </Col>
                 <Col>

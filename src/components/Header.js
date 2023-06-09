@@ -8,43 +8,44 @@ import {
     NavItem 
 } from "reactstrap";
 import { NavLink } from 'react-router-dom';
-import ProfilePic from '../app/assets/img/ProfilePic.png'
-import UserLoginForm from "../features/user/UserLoginForm";
+import Symbol from '../app/assets/img/JarrettRosterSymbol.png'
+import Logo from '../app/assets/img/JarrettRosterLogo.png'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
-            <NavbarBrand className='ms-2' href='/'>
-                <img src={ProfilePic} alt='profile pic' className='float-start'/>
+            <NavbarBrand className='mx-auto' href='/'>
+                <img src={Symbol} alt='jarrett roster symbol' style={{ height: 40, width: 40}}/>
             </NavbarBrand>
+
+            <img src={Logo} alt='logo' className='mx-auto' style={{ height: 40, width: 250, paddingLeft: 20}}/>
 
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
-                <Nav className="mx-auto" navbar>
+                <Nav className="mx-auto" style={{ paddingRight: 310 }} navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
-                            <i className='fa fa-lg' /> Home
+                            <i className='fa fa-lg' /> about
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/directory'>
-                            <i className='fa fa-lg' /> Projects
+                            <i className='fa fa-lg' /> projects
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/about'>
-                            <i className='fa fa-lg' /> About
+                            <i className='fa fa-lg' /> blog
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/contact'>
-                            <i className='fa fa-lg' /> Contact
+                            <i className='fa fa-lg' /> contact
                         </NavLink>
                     </NavItem>
                 </Nav>
-                <UserLoginForm />
             </Collapse>
         </Navbar>
     );
