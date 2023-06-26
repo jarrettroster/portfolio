@@ -5,20 +5,36 @@ const Footer = () => {
     return (
         <footer className='site-footer'> 
             <Container>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 <Row>
-                    <Col xs={{ size: 4, offset: 1 }} sm='3' className='mx-auto text-white'>
+                    <Col xs={{ size: 4 }} sm='6' className='mx-auto text-white'>
                         <ul className='list-inline text-white d-flex'>
                             <li>
-                                <Link style={{ padding: 10 }} className= 'text-white' to='/'> about </Link>
+                                <Link className= 'text-white px-1 px-md-3' to='/'> about </Link>
                             </li>
                             <li>
-                                <Link style={{ padding: 10 }} className= 'text-white' to='/projects'> projects </Link>
+                                <Link className= 'text-white px-1 px-md-3' to='/projects'> projects </Link>
                             </li>
                             <li>
-                                <Link style={{ padding: 10 }} className= 'text-white' to='/about'> blog </Link>
+                                <Link className= 'text-white px-1 px-md-3' to='/about'> blog </Link>
                             </li>
                             <li>
-                                <Link style={{ padding: 10 }} className= 'text-white' to='/contact'> contact </Link>
+                                <Link className= 'text-white px-0 px-md-3' to='/contact'> contact </Link>
                             </li>
                         </ul>
                     </Col>
