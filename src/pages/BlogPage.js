@@ -1,6 +1,6 @@
 import { Col, Row, Container, Card, CardBody, CardHeader } from "reactstrap";
 
-const AboutPage = () => {
+const BlogPage = () => {
 
     return (
         <Container style={{ paddingTop: 50}}>
@@ -67,4 +67,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default BlogPage;

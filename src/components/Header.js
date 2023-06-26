@@ -15,7 +15,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar dark color='primary' sticky='top' expand='md'>
+        <Navbar id= "navbar" dark color='primary' sticky='top' expand='md' style={{ boxShadow: '0 20px 20px rgba(0, 0, 0, 0.20)' }}>
             <NavbarBrand className='mx-auto' href='/'>
                 <img src={Symbol} alt='jarrett roster symbol' style={{ height: 40, width: 40}}/>
             </NavbarBrand>
@@ -26,17 +26,19 @@ const Header = () => {
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className="mx-auto" style={{ paddingRight: 310 }} navbar>
                     <NavItem>
-                        <NavLink className='nav-link' to='/'>
+                        <NavLink
+                            className="nav-link"
+                            to="/about">
                             <i className='fa fa-lg' /> about
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
+                        <NavLink className='nav-link' to='/projects'>
                             <i className='fa fa-lg' /> projects
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/about'>
+                        <NavLink className='nav-link' to='/blog'>
                             <i className='fa fa-lg' /> blog
                         </NavLink>
                     </NavItem>
