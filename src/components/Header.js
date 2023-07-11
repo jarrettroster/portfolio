@@ -17,14 +17,14 @@ const Header = () => {
     return (
         <Navbar id= "navbar" dark color='primary' sticky='top' expand='md' style={{ boxShadow: '0 20px 20px rgba(0, 0, 0, 0.20)' }}>
             <NavbarBrand className='mx-auto' href='/'>
-                <img src={Symbol} alt='jarrett roster symbol' style={{ height: 40, width: 40}}/>
+                <img src={Symbol} alt='jarrett roster symbol' style={{ height: 35, width: 35}}/>
             </NavbarBrand>
 
-            <img src={Logo} alt='logo' className='mx-auto' style={{ height: 40, width: 250, paddingLeft: 20}}/>
+            <img src={Logo} alt='logo' className='mx-auto' style={{ height: 40, width: 250}}/>
 
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
-                <Nav className="mx-auto" style={{ paddingRight: 310 }} navbar>
+                <Nav className="mx-auto" style={{ textAlign: 'center' }} navbar>
                     <NavItem>
                         <NavLink
                             className="nav-link"
