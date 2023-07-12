@@ -15,12 +15,6 @@ const Footer = () => {
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                 <Row>
                     <Col xs={{ size: 4 }} sm='6' className='mx-auto text-white'>
                         <ul className='list-inline text-white d-flex'>

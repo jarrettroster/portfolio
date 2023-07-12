@@ -12,7 +12,6 @@ import { useDispatch } from 'react-redux';
 import { fetchPartners } from './features/partners/partnersSlice';
 import { fetchPromotions } from './features/promotions/promotionsSlice';
 import { fetchComments } from './features/comments/commentsSlice';
-import Sunset from '../src/app/assets/img/Sunset.jpg';
 import { useSpring, animated} from 'react-spring';
 import CursorTracer from './components/CursorTracer';
 
@@ -34,10 +33,7 @@ function App() {
 
 
     return (
-            <div className="App" style={{
-                backgroundImage:`url(${Sunset})`,
-                backgroundSize: 'cover'
-                }}>
+            <div id='backgroundStyle' className="App">
             <animated.div style={animatedStyle}>
                 <Header />
             </animated.div>

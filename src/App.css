@@ -1,25 +1,19 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato';
 }
-
-h1,
 h2,
 h3,
 .card-body > .card-title {
-    font-family: 'Open Sans', cursive;
+    font-family: 'Lato';
 }
 
 .card-title {
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .card-header {
     background-color: #00686f;
-}
-
-h2 {
-    color: #00686f;
 }
 
 .card-img-overlay .card-title {
@@ -29,7 +23,6 @@ h2 {
 
 .row-content {
     padding: 50px 0;
-    border-bottom: 1px ridge;
     min-height: 200px;
 }
 
@@ -39,13 +32,13 @@ h2 {
 }
 
 .nav-link {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     transition: font-size 1s;
 }
   
 .nav-link:hover {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .navbar-brand {
@@ -62,7 +55,7 @@ h2 {
 
 .navbar-dark {
     background-color: #901cad;
-    background-image: linear-gradient(to right, #00686f, #00aebb, #915799);
+    background-image: linear-gradient(to right, #E27D5F, #ed6338);
     margin-bottom: 2rem;
     min-height: 6rem;
 }
@@ -91,11 +84,27 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 5px;
-    height: 5px;
-    background-color: #ffa702;
+    width: 10px;
+    height: 10px;
+    background-color: #ed6338;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
     filter: drop-shadow(0px 0px 5px rgb(255, 255, 255))
   }
+
+  #cardStyle {
+    background-color: #E8A87C;
+  }
+
+  #backgroundStyle {
+    background-color: #901cad;
+    background-image: linear-gradient(to right, #83C7C2, #7DC2AD);
+  }
+
+  #nameStyle {
+    font-size: 60px;
+    font-weight:  bold;  
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ed6338;
+}
