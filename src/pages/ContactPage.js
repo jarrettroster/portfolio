@@ -6,11 +6,9 @@ const ContactPage = () => {
         <Container>
                 <Row className='row-content align-items-center'>
                     <Col sm='4'>
-                        <h5>Our Address</h5>
+                        <h5>My Address</h5>
                         <address>
-                            1 Nucamp Way
-                            <br />
-                            Seattle, WA 98001
+                            Coming soon to Lakewood, CO!
                             <br />
                             U.S.A.
                         </address>
@@ -19,23 +17,23 @@ const ContactPage = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='tel:+12065551234'
+                            href='tel:+13038836084'
                         >
-                            <i className='fa fa-phone' /> 1-206-555-1234
+                            <i className='fa fa-phone' /> 303-883-6084
                         </a>
                         <br />
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='mailto:fakeemail@fakeemail.co'
+                            href='mailto:jarrettroster@protonmail.com'
                         >
-                            <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                            <i className='fa fa-envelope-o' /> jarrettroster@protonmail.com
                         </a>
                     </Col>
                 </Row>
                 <Row className='row-content'>
                     <Col xs='12'>
-                        <h2>Send Us Your Feedback</h2>
+                        <h2>Send Me Your Feedback</h2>
                         <hr />
                     </Col>
                     <Col md='10'>
