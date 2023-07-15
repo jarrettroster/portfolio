@@ -12,12 +12,12 @@ const HomePage = () => {
                             Hi! My name is
                         </h3>
                         <div id="nameStyle">
-                        Jarrett Roster
+                            Jarrett Roster
                         </div>
                         <h5>
-                        I'm a passionate Full Stack Web and Mobile Developer, combining technical expertise with a creative touch. 
-                        Committed to excellence, driven by faith, and dedicated to exceeding expectations. 
-                        Bringing a unique perspective with a background in music production and graphic design.
+                            I'm a passionate Full Stack Web and Mobile Developer, combining technical expertise with a creative touch. 
+                            Committed to excellence, driven by faith, and dedicated to exceeding expectations. 
+                            Bringing a unique perspective with a background in music production and graphic design.
                         </h5>
                     </Col>
                     <Col style={{ padding: 40 }}>
@@ -35,13 +35,36 @@ const HomePage = () => {
                 </Row>
             </Container>
             <Container id ='cardStyle' style={styles.container}>
-                <Row className="row-content text-white mx-auto" style={{ margin: 10, alignItems: 'center' }}>
-                    <Col sm={12} md={8} className="px-0">
-                        <h3 style={{ paddingTop: 50 }}>
-                            
-                        </h3>
-                    </Col>
-                </Row>
+                        <div>                     
+                        <a 
+                            id='icons'
+                            className='btn btn-social-icon btn-linkedin'
+                            href='http://www.linkedin.com/in/jarrett-roster-459985268/'
+                        >
+                            <i className='fa fa-linkedin' />
+                        </a>{' '}
+                        <a 
+                            id='icons'
+                            className='btn btn-social-icon btn-github'
+                            href='http://github.com/jarrettroster/'
+                            >
+                            <i className='fa fa-github' />
+                        </a>{' '}
+                        <a
+                            id='icons'
+                            className='btn btn-social-icon btn-twitter'
+                            href='http://twitter.com/'
+                            >
+                            <i className='fa fa-twitter' />
+                        </a>{' '}
+                        <a
+                            id='icons'
+                            className='btn btn-social-icon btn-google'
+                            href='http://youtube.com/'
+                        >
+                            <i className='fa fa-youtube' />
+                        </a>
+                        </div>
             </Container>
         </div>
     
