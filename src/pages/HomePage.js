@@ -7,7 +7,7 @@ const HomePage = () => {
         <div>
             <Container id ='cardStyle' style={styles.container}>
                 <Row className="row-content text-white mx-auto" style={{ margin: 10, alignItems: 'center' }}>
-                    <Col sm={12} md={8} className="px-0 mx-auto">
+                    <Col sm={12} md={6} className="px-0">
                         <h3 style={{ padding: 40,  paddingLeft: 0, paddingBottom: 0 }}>
                             Hi! My name is
                         </h3>
@@ -20,51 +20,60 @@ const HomePage = () => {
                             Bringing a unique perspective with a background in music production and graphic design.
                         </h5>
                     </Col>
-                    <Col style={{ padding: 40 }}>
+                    <Col sm={12} md={6} className="d-flex justify-content-center align-items-center">
                         <img 
-                        src={ProfilePic} 
-                        alt='profile pic' 
-                        style={{ 
-                            width: '250px', 
-                            height: '250px', 
-                            padding: 0,
-                            borderRadius: '50%',
-                            boxShadow: '0 20px 20px rgba(0, 0, 0, 0.50)'
-                        }}/>
+                            src={ProfilePic} 
+                            alt='profile pic' 
+                            style={{ 
+                                width: '250px', 
+                                height: '250px', 
+                                padding: 0,
+                                borderRadius: '50%',
+                                boxShadow: '0 20px 20px rgba(0, 0, 0, 0.50)'
+                            }}
+                        />
                     </Col>
                 </Row>
             </Container>
             <Container id ='cardStyle' style={styles.container}>
+                <Row className="justify-content-center">
+                    <Col xs="auto">
                         <div>                     
-                        <a 
-                            id='icons'
-                            className='btn btn-social-icon btn-linkedin'
-                            href='http://www.linkedin.com/in/jarrett-roster-459985268/'
-                        >
-                            <i className='fa fa-linkedin' />
-                        </a>{' '}
-                        <a 
-                            id='icons'
-                            className='btn btn-social-icon btn-github'
-                            href='http://github.com/jarrettroster/'
+                            <a 
+                                id='icons'
+                                className='btn btn-social-icon btn-linkedin'
+                                href='http://www.linkedin.com/in/jarrett-roster-459985268/'
+                                style={{ backgroundColor: '#7DC2AD' }}
                             >
-                            <i className='fa fa-github' />
-                        </a>{' '}
-                        <a
-                            id='icons'
-                            className='btn btn-social-icon btn-twitter'
-                            href='http://twitter.com/'
+                                <i className='fa fa-linkedin' />
+                            </a>{' '}
+                            <a 
+                                id='icons'
+                                className='btn btn-social-icon btn-github'
+                                href='http://github.com/jarrettroster/'
+                                style={{ backgroundColor: '#7DC2AD' }}
                             >
-                            <i className='fa fa-twitter' />
-                        </a>{' '}
-                        <a
-                            id='icons'
-                            className='btn btn-social-icon btn-google'
-                            href='http://youtube.com/'
-                        >
-                            <i className='fa fa-youtube' />
-                        </a>
+                                <i className='fa fa-github' />
+                            </a>{' '}
+                            <a
+                                id='icons'
+                                className='btn btn-social-icon btn-twitter'
+                                href='http://twitter.com/'
+                                style={{ backgroundColor: '#7DC2AD' }}
+                            >
+                                <i className='fa fa-twitter' />
+                            </a>{' '}
+                            <a
+                                id='icons'
+                                className='btn btn-social-icon btn-google'
+                                href='http://youtube.com/'
+                                style={{ backgroundColor: '#7DC2AD' }}
+                            >
+                                <i className='fa fa-youtube' />
+                            </a>
                         </div>
+                    </Col>
+                </Row>
             </Container>
         </div>
     
@@ -73,19 +82,19 @@ const HomePage = () => {
 
 const styles = {
     container: {
-      borderRadius: 10,
-      backgroundColor: '#E8A87C',
-      padding: 20,
-      width: '94%',
-      maxWidth: '94%',
-      margin: 40
+        borderRadius: 10,
+        backgroundColor: '#E8A87C',
+        padding: 20,
+        width: '94%',
+        maxWidth: '94%',
+        margin: '40px auto'  // Center the container horizontally
     },
     box: {
-      backgroundColor: '#00686f',
-      borderRadius: 10,
-      margin: 0,
-      padding: 40,
+        backgroundColor: '#00686f',
+        borderRadius: 10,
+        margin: 0,
+        padding: 40,
     },
-  };
+};
 
 export default HomePage;

@@ -8,7 +8,7 @@ const AboutPage = () => {
                 <Col sm='12'>
                     <h3>About Me</h3>
                     <h4>
-                    I am Jarrett, a 32-year-old professional blending a passion for music business with newfound enthusiasm for coding.
+                    I'm Jarrett, a 32-year-old professional blending a passion for music business with newfound enthusiasm for coding.
                      After studying Music Business, I pursued a career promoting artists and labels. However, the COVID-19 pandemic 
                      led me to seek new avenues for growth. I enrolled in a transformative six-month coding bootcamp with Nucamp, 
                      diving into web development and honing my skills in HTML, CSS, JavaScript, and React. Now, armed with music industry 
