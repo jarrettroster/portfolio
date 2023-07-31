@@ -17,6 +17,16 @@ const AboutPage = () => {
                      music with growing technical proficiency. Outside of work, I enjoy playing guitar, 
                     composing music, and attending live performances, fostering a well-rounded appreciation for artistry and technology. 
                     </h4>
+                    <br />
+                    <br /> 
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </Col>
                 {/* <Col>
                     <Card className='bg-light mt-3'>

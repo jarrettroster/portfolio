@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "reactstrap";
-import ProfilePic from '../app/assets/img/ProfilePic.png'
-
+import ProfilePic from '../app/assets/img/ProfilePic.png';
 
 const HomePage = () => {
     return (
@@ -35,48 +34,35 @@ const HomePage = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container id ='cardStyle' style={styles.container}>
-                <Row className="justify-content-center">
-                    <Col xs="auto">
-                        <div>                     
-                            <a 
-                                id='icons'
-                                className='btn btn-social-icon btn-linkedin'
-                                href='http://www.linkedin.com/in/jarrett-roster-459985268/'
-                                style={{ backgroundColor: '#7DC2AD' }}
-                            >
-                                <i className='fa fa-linkedin' />
-                            </a>{' '}
-                            <a 
-                                id='icons'
-                                className='btn btn-social-icon btn-github'
-                                href='http://github.com/jarrettroster/'
-                                style={{ backgroundColor: '#7DC2AD' }}
-                            >
-                                <i className='fa fa-github' />
-                            </a>{' '}
-                            <a
-                                id='icons'
-                                className='btn btn-social-icon btn-twitter'
-                                href='http://twitter.com/'
-                                style={{ backgroundColor: '#7DC2AD' }}
-                            >
-                                <i className='fa fa-twitter' />
-                            </a>{' '}
-                            <a
-                                id='icons'
-                                className='btn btn-social-icon btn-google'
-                                href='http://youtube.com/'
-                                style={{ backgroundColor: '#7DC2AD' }}
-                            >
-                                <i className='fa fa-youtube' />
-                            </a>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+            <Container id ='cardStyle' style={styles.container2}>
+                <div className="text-center">
+                    <a
+                        className='btn btn-social-icon btn-lg btn-linkedin'
+                        href='http://www.linkedin.com/in/jarrett-roster-459985268/'
+                    >
+                        <i className='fa fa-linkedin' />
+                    </a>{' '}
+                    <a
+                        className='btn btn-social-icon btn-lg btn-github'
+                        href='http://github.com/jarrettroster/'
+                    >
+                        <i className='fa fa-github' />
+                    </a>{' '}
+                    <a
+                        className='btn btn-social-icon btn-lg btn-twitter'
+                        href='http://twitter.com/'
+                    >
+                        <i className='fa fa-twitter' />
+                    </a>{' '}
+                    <a
+                        className='btn btn-social-icon btn-lg btn-google'
+                        href='http://youtube.com/'
+                    >
+                        <i className='fa fa-youtube' />
+                    </a>
+                    </div>
+                </Container>
         </div>
-    
     );
 };
 
@@ -87,14 +73,16 @@ const styles = {
         padding: 20,
         width: '94%',
         maxWidth: '94%',
-        margin: '40px auto'  // Center the container horizontally
+        margin: '40px auto'
     },
-    box: {
-        backgroundColor: '#00686f',
-        borderRadius: 10,
-        margin: 0,
-        padding: 40,
-    },
+    container2: {
+        borderRadius: 50,
+        backgroundColor: '#E8A87C',
+        padding: 20,
+        width: '20%',
+        maxWidth: '94%',
+        margin: '40px auto'
+    }
 };
 
 export default HomePage;
