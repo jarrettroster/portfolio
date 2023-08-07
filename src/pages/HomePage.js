@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "reactstrap";
 import ProfilePic from '../app/assets/img/ProfilePic.png';
+import ProjectPage from './ProjectPage';
 
 const HomePage = () => {
     return (
@@ -33,6 +34,9 @@ const HomePage = () => {
                         />
                     </Col>
                 </Row>
+            </Container>
+            <Container style={{ paddingTop: 40, paddingBottom: 40 }}>
+                <ProjectPage />
             </Container>
             <Container id ='cardStyle' style={styles.container2}>
                 <div className="text-center">
@@ -73,15 +77,17 @@ const styles = {
         padding: 20,
         width: '94%',
         maxWidth: '94%',
-        margin: '40px auto'
+        margin: '20px auto',
+        border: '1px solid white' 
     },
     container2: {
         borderRadius: 50,
         backgroundColor: '#E8A87C',
-        padding: 20,
-        width: '20%',
+        padding: 10,
+        width: '45%',
         maxWidth: '94%',
-        margin: '40px auto'
+        margin: '5px auto',
+        border: '1px solid white' 
     }
 };
 

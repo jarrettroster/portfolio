@@ -1,11 +1,10 @@
 import { Container, Col, Row } from "reactstrap";
-import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => {
     return (
         <Container>
                 <Row className='row-content align-items-center'>
-                    <Col sm='4'>
+                    <Col sm='6'>
                         <h5>My Address</h5>
                         <address>
                             Coming soon to Lakewood, CO!
@@ -29,15 +28,6 @@ const ContactPage = () => {
                         >
                             <i className='fa fa-envelope-o' /> jarrettroster@protonmail.com
                         </a>
-                    </Col>
-                </Row>
-                <Row className='row-content'>
-                    <Col xs='12'>
-                        <h2>Send Me Your Feedback</h2>
-                        <hr />
-                    </Col>
-                    <Col md='10'>
-                        <ContactForm />
                     </Col>
                 </Row>
         </Container>

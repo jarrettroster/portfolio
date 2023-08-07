@@ -1,8 +1,10 @@
 .card-header {
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, #ed6338, #E27D5F);
+    color: #ed6338;
+    background-image: linear-gradient(to right, #E8A87C, #E8A87C); 
+    font-style: bold
+;
 }
 
 .card-body {
-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.50);
 }

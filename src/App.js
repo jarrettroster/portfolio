@@ -35,7 +35,7 @@ function App() {
     return (
             <div id='backgroundStyle' className="App">
             <animated.div style={animatedStyle}>
-                <Header />
+                <Header /> 
             </animated.div>
             <Routes>
                 <Route path='/' element={<HomePage />} /> 

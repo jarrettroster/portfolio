@@ -7,8 +7,7 @@ import './ProjectPage.css';
 const ProjectPage = () => {
     return (
         <Container style={{ textAlign: "center"}}>
-            <h3 id='title'> Projects </h3>
-            <Row style={{ paddingBottom: 100 }}>
+            <Row>
                 <Col sm='6' md='4' className="mx-auto img-fluid">
                     <Card>
                         <CardHeader><h3>Passage App</h3></CardHeader>
